@@ -16,7 +16,7 @@ body {
   width: 100%;
   z-index: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -53,6 +53,47 @@ body {
   width: 100%;
 }
 
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-icon {
+  height: 24px;
+  margin-right: 5px;
+}
+
+.notifications-icon-container {
+  position: relative;
+  margin: 0px 10px 0px 10px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+}
+
+.profile {
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+}
+
+.profile img {
+  width: 100%;
+}
+
 /* banner */
 
 .banner {
@@ -81,14 +122,20 @@ body {
 }
 
 .banner_btn button {
-  width: 60px;
+  width: 80px;
   height: 30px;
+  padding: 5px 8px 5px 8px;
   border-radius: 2px;
   border: 1px solid transparent;
 }
 
+.banner_btn .detail_button {
+  background-color: rgb(110, 107, 107);
+  color: white;
+}
+
 .banner_btn button:hover {
-  background-color: rgb(171, 163, 163);
+  background-color: rgb(171, 163, 163, 0.7);
   cursor: pointer;
 }
 
